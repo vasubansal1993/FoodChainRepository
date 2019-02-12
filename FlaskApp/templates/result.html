@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<title>Headline Prediction App</title>
+    <head>
+      <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+
+      input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+      }
+
+      input[type=submit] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+          background-color: #45a049;
+      }
+
+      /* .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+      } */
+      .left {
+        float: left;
+        width: 65%;
+        overflow: hidden;
+      }
+
+      .right {
+        overflow: hidden;
+      }
+      </style>
+    </head>
+
+    <body>
+<center>
+  <h1>Blockchain Demo</h1>
+</center>
+
+  <div class="left">
+    <p>Index is - {{index}} </p>
+    <p>Trasaction is -{{transactions}} </p>
+    <p>Proof - {{proof}} </p>
+    <p>Prev. Hash - {{previous_hash}}</p>
+    </form>
+  </div>
+<br>
+<br>
+<br>
+    <form action="/chain" method="GET">
+    <input type="submit" value="View the whole chain">
+    </form>
+		<form>
+		<input type="submit" value="Click to add more transactions">
+		</form>
+
+
+</body>
+</html>
